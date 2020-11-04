@@ -1,58 +1,52 @@
 {
-  "skeletalmesh": {
+  "skeletalMesh": {
     "mesh": "zombie",
-    "heightOffset": -2.3,
+    "heightOffset": -0.8,
     "scale": [0.25, 0.25, 0.25],
     "material": "zombieSkin",
-    "animation": "zombieIdle",
+    "animation": "zombie#idle",
     "loop": true
   },
-  "Behavior": {
-    "tree": "Behaviors:critter"
+  "ChunkGenerationSpawnable": {
+    "probability": 3.0,
+    "maxGroupSize": 2
   },
-  "AttackInProximity" : {
-    "speedMultiplier" : 1.2
+  "Behavior": {
+    "tree": "Behaviors:hostileCritter"
+  },
+  "AttackInProximity": {
+    "maxDistance": 15
   },
   "FindNearbyPlayers": {
-    "searchRadius" : 10
+    "searchRadius": 15
   },
-  "StrayIfIdle": {
-    "defaultSpeedMultiplier": 0.2
-  },
-  "BlockDropGrammar": {
+  "DropGrammar": {
     "blockDrops": [],
     "itemDrops": []
   },
   "Stand": {
     "animationPool": [
-      "zombieIdle"
+      "zombie#idle"
     ]
   },
   "Walk": {
     "animationPool": [
-      "zombieWalk"
+      "zombie#walk"
     ]
   },
   "Die": {
     "animationPool": []
   },
   "MeleeAttack": {
-    "animationPool": ["zombieAttack"]
+    "animationPool": [
+      "zombie#attack"
+    ]
   },
   "persisted": true,
   "location": {},
   "Character": {},
   "AliveCharacter": {},
-  "WildAnimal": {
-    "name": "Zombie",
-    "icon": "WildAnimals:zombieIcon"
-  },
   "NPCMovement": {},
-  "CreatureNameGenerator": {
-    "genderRatio": 0.5,
-    "nobility": 0.5,
-    "theme": "DWARF"
-  },
   "CharacterMovement": {
     "groundFriction": 16,
     "speedMultiplier": 0.3,
@@ -76,7 +70,8 @@
   "MinionMove": {},
   "Health": {
     "destroyEntityOnNoHealth": true,
-    "currentHealth": 7
+    "currentHealth": 50,
+    "maxHealth": 50
   },
   "BoxShape": {
     "extents": [

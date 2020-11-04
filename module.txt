@@ -5,11 +5,10 @@
     "displayName" : "ZombieSurvival",
     "description" : "",
     "dependencies" : [
-      {"id": "Core", "minVersion": "3.0.0"},
-      {"id": "Behaviors", "minVersion": "0.2.2"}
+      {"id": "JoshariasSurvival", "minVersion": "1.1.0"},
+      {"id": "Spawning", "minVersion": "1.0.0"}
     ],
     "serverSideOnly" : false,
     "isGameplay" : true,
-    "isWorld": true,
-    "defaultWorldGenerator" : "Core:FacetedPerlin"
+    "isWorld": true
 }
