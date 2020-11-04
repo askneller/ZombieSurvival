@@ -1,0 +1,90 @@
+{
+  "skeletalMesh": {
+    "mesh": "zombie",
+    "heightOffset": -0.8,
+    "scale": [0.25, 0.25, 0.25],
+    "material": "zombieSkin",
+    "animation": "zombie#idle",
+    "loop": true
+  },
+  "ChunkGenerationSpawnable": {
+    "probability": 3.0,
+    "maxGroupSize": 2
+  },
+  "Behavior": {
+    "tree": "Behaviors:hostileCritter"
+  },
+  "AttackInProximity": {
+    "maxDistance": 15
+  },
+  "FindNearbyPlayers": {
+    "searchRadius": 15
+  },
+  "DropGrammar": {
+    "blockDrops": [],
+    "itemDrops": []
+  },
+  "Stand": {
+    "animationPool": [
+      "zombie#idle"
+    ]
+  },
+  "Walk": {
+    "animationPool": [
+      "zombie#walk"
+    ]
+  },
+  "Die": {
+    "animationPool": [
+    ]
+  },
+  "MeleeAttack": {
+    "animationPool": [
+      "zombie#attack"
+    ]
+  },
+  "persisted": true,
+  "location": {},
+  "Character": {},
+  "AliveCharacter": {},
+  "NPCMovement": {},
+  "CharacterMovement": {
+    "groundFriction": 16,
+    "speedMultiplier": 0.3,
+    "distanceBetweenFootsteps": 0.2,
+    "distanceBetweenSwimStrokes": 2.5,
+    "height": 1.6,
+    "radius": 0.3,
+    "jumpSpeed": 12
+  },
+  "CharacterSound": {
+    "footstepSounds": [
+      "FootGrass1",
+      "FootGrass2",
+      "FootGrass3",
+      "FootGrass4",
+      "FootGrass5"
+    ],
+    "footstepVolume": 0.03
+  },
+  "Network": {},
+  "MinionMove": {},
+  "Health": {
+    "destroyEntityOnNoHealth": true,
+    "currentHealth": 50,
+    "maxHealth": 50
+  },
+  "BoxShape": {
+    "extents": [
+      1.5,
+      1.5,
+      1.5
+    ]
+  },
+  "Trigger": {
+    "detectGroups": [
+      "engine:debris",
+      "engine:sensor"
+    ]
+  }
+}
