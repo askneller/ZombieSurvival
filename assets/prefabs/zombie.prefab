@@ -8,8 +8,8 @@
     "loop": true
   },
   "ChunkGenerationSpawnable": {
-    "probability": 3.0,
-    "maxGroupSize": 2
+    "probability": 12.0,
+    "maxGroupSize": 1
   },
   "Behavior": {
     "tree": "Behaviors:hostileCritter"
