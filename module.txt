@@ -6,7 +6,8 @@
     "description" : "The world has been devastated by a zombie apocalypse, can you avoid the zombies and survive? (A module based on JoshariasSurvival)",
     "dependencies" : [
       { "id": "JoshariasSurvival", "minVersion": "1.1.0" },
-      { "id": "Spawning", "minVersion": "1.0.0" }
+      { "id": "Spawning", "minVersion": "1.0.0" },
+      { "id": "Health", "minVersion": "1.0.0" }
     ],
     "isGameplay": true,
     "isWorld": true,

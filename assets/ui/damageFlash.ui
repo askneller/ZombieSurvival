@@ -1,0 +1,19 @@
+{
+    "type": "DamageFlash",
+    "skin": "damageFlashDefault",
+    "contents": {
+        "type": "relativeLayout",
+        "contents": [
+            {
+                "type": "UILabel",
+                "text": "DAMAGE",
+                "layoutInfo": {
+                    "use-content-width": true,
+                    "use-content-height": true,
+                    "position-horizontal-center": {},
+                    "position-vertical-center": {}
+                }
+            }
+        ]
+    }
+}
