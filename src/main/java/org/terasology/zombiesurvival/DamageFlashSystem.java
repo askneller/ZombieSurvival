@@ -32,7 +32,7 @@ public class DamageFlashSystem extends BaseComponentSystem implements UpdateSubs
     // TODO Must be a better way to do this
     @ReceiveEvent(components = PlayerCharacterComponent.class)
     public void onDamaged(OnDamagedEvent event, EntityRef entity) {
-        if (!waitingEnd) {
+        if (!waitingEnd && event.getDamageAmount() > 0) {
             waitingEnd = true;
             gameTimeScreenUp = time.getGameTimeInMs();
             nuiManager.addOverlay("ZombieSurvival:damageFlash", DamageFlash.class);

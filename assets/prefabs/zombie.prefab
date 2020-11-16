@@ -8,7 +8,7 @@
     "loop": true
   },
   "ChunkGenerationSpawnable": {
-    "probability": 12.0,
+    "probability": 8.0,
     "maxGroupSize": 1
   },
   "Behavior": {
